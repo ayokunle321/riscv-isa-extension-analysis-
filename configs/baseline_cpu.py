@@ -19,7 +19,6 @@ system.mem_ctrl.dram.range = system.mem_ranges[0]
 system.mem_ctrl.port = system.membus.mem_side_ports
 system.system_port = system.membus.cpu_side_ports
 
-# Example workload placeholder
 from m5.objects import SEWorkload, Process
 binary_path = "benchmarks/bfs_riscv"  # placeholder
 system.workload = SEWorkload.init_compatible(binary_path)

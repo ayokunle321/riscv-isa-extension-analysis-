@@ -1,0 +1,13 @@
+warn: Base 10 memory/cache size 512MB will be cast to base 2 size 512MiB.
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+src/mem/dram_interface.cc:692: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/arch/riscv/isa.cc:320: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/arch/riscv/linux/se_workload.cc:73: warn: Unknown operating system; assuming Linux.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/cpu/minor/execute.cc:167: warn: No functional unit for OpClass SimdUnitStrideSegmentedLoad
+src/cpu/minor/execute.cc:167: warn: No functional unit for OpClass SimdUnitStrideSegmentedStore
+src/cpu/minor/execute.cc:167: warn: No functional unit for OpClass SimdUnitStrideSegmentedFaultOnlyFirstLoad
+src/cpu/minor/execute.cc:167: warn: No functional unit for OpClass SimdStrideSegmentedLoad
+src/cpu/minor/execute.cc:167: warn: No functional unit for OpClass SimdStrideSegmentedStore
+system.remote_gdb: Listening for connections on port 7000

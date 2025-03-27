@@ -1,0 +1,107 @@
+{
+  "gshare": {
+    "hash_lookup": {
+      "sim_ticks": 1139194000,
+      "sim_seconds": 0.001139,
+      "num_insts": null,
+      "num_cycles": 1139194,
+      "ipc": 0.044596,
+      "branch_pred_lookups": null,
+      "branch_pred_cond_predicted": 9527,
+      "branch_pred_cond_incorrect": 554,
+      "mispredict_rate": 5.815051957594206
+    },
+    "factorial": {
+      "sim_ticks": 336082000,
+      "sim_seconds": 0.000336,
+      "num_insts": null,
+      "num_cycles": 336082,
+      "ipc": 0.054463,
+      "branch_pred_lookups": null,
+      "branch_pred_cond_predicted": 4034,
+      "branch_pred_cond_incorrect": 569,
+      "mispredict_rate": 14.105106593951414
+    },
+    "bfs": {
+      "sim_ticks": 262934000,
+      "sim_seconds": 0.000263,
+      "num_insts": null,
+      "num_cycles": 262934,
+      "ipc": 0.046373,
+      "branch_pred_lookups": null,
+      "branch_pred_cond_predicted": 2829,
+      "branch_pred_cond_incorrect": 360,
+      "mispredict_rate": 12.725344644750795
+    }
+  },
+  "bimodal": {
+    "hash_lookup": {
+      "sim_ticks": 1148614000,
+      "sim_seconds": 0.001149,
+      "num_insts": null,
+      "num_cycles": 1148614,
+      "ipc": 0.044231,
+      "branch_pred_lookups": null,
+      "branch_pred_cond_predicted": 10441,
+      "branch_pred_cond_incorrect": 989,
+      "mispredict_rate": 9.472272770807393
+    },
+    "factorial": {
+      "sim_ticks": 333780000,
+      "sim_seconds": 0.000334,
+      "num_insts": null,
+      "num_cycles": 333780,
+      "ipc": 0.054839,
+      "branch_pred_lookups": null,
+      "branch_pred_cond_predicted": 4459,
+      "branch_pred_cond_incorrect": 819,
+      "mispredict_rate": 18.367346938775512
+    },
+    "bfs": {
+      "sim_ticks": 265980000,
+      "sim_seconds": 0.000266,
+      "num_insts": null,
+      "num_cycles": 265980,
+      "ipc": 0.045842,
+      "branch_pred_lookups": null,
+      "branch_pred_cond_predicted": 3417,
+      "branch_pred_cond_incorrect": 750,
+      "mispredict_rate": 21.94907813871817
+    }
+  },
+  "tournament": {
+    "hash_lookup": {
+      "sim_ticks": 1139715000,
+      "sim_seconds": 0.00114,
+      "num_insts": null,
+      "num_cycles": 1139715,
+      "ipc": 0.044576,
+      "branch_pred_lookups": null,
+      "branch_pred_cond_predicted": 9700,
+      "branch_pred_cond_incorrect": 714,
+      "mispredict_rate": 7.360824742268041
+    },
+    "factorial": {
+      "sim_ticks": 337593000,
+      "sim_seconds": 0.000338,
+      "num_insts": null,
+      "num_cycles": 337593,
+      "ipc": 0.054219,
+      "branch_pred_lookups": null,
+      "branch_pred_cond_predicted": 4174,
+      "branch_pred_cond_incorrect": 732,
+      "mispredict_rate": 17.53713464302827
+    },
+    "bfs": {
+      "sim_ticks": 262300000,
+      "sim_seconds": 0.000262,
+      "num_insts": null,
+      "num_cycles": 262300,
+      "ipc": 0.046485,
+      "branch_pred_lookups": null,
+      "branch_pred_cond_predicted": 2986,
+      "branch_pred_cond_incorrect": 514,
+      "mispredict_rate": 17.213663764233086
+    }
+  }
+}

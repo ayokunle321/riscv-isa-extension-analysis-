@@ -1,24 +1,36 @@
 # RISC-V cross-compilation toolchain
 CC = riscv64-unknown-elf-gcc
-CFLAGS = -O2 -march=rv64g -mabi=lp64d -static
+CFLAGS = -O2 -march=rv64gc -mabi=lp64d -static
 
-# Directories
-BASELINE_DIR = baseline
-POPCOUNT_DIR = popcount
-FMA_DIR = fma
+# Source files
+SRCS = bfs.c factorial.c hash_lookup.c
 
-# Baseline targets
-BASELINE_SRCS = $(wildcard $(BASELINE_DIR)/*.c)
-BASELINE_BINS = $(BASELINE_SRCS:.c=.elf)
+# Output binaries
+BINS = bfs_riscv factorial_riscv hash_lookup_riscv
 
-all: baseline
+.PHONY: all clean
 
-baseline: $(BASELINE_BINS)
+all: $(BINS)
 
-%.elf: %.c
+bfs_riscv: bfs.c
 	$(CC) $(CFLAGS) $< -o $@
+	@echo "✓ Built bfs_riscv"
+
+factorial_riscv: factorial.c
+	$(CC) $(CFLAGS) $< -o $@
+	@echo "✓ Built factorial_riscv"
+
+hash_lookup_riscv: hash_lookup.c
+	$(CC) $(CFLAGS) $< -o $@
+	@echo "✓ Built hash_lookup_riscv"
 
 clean:
-	rm -f $(BASELINE_DIR)/*.elf $(POPCOUNT_DIR)/*.elf $(FMA_DIR)/*.elf
+	rm -f $(BINS)
+	@echo "✓ Cleaned all binaries"
 
-.PHONY: all baseline clean
+# Build and verify
+test: all
+	@echo "=== Verifying RISC-V binaries ==="
+	@file bfs_riscv
+	@file factorial_riscv
+	@file hash_lookup_riscv

@@ -1,0 +1,26 @@
+Global frequency set at 1000000000000 ticks per second
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.0.0.1
+gem5 compiled Oct 23 2025 06:19:15
+gem5 started Oct 23 2025 10:02:58
+gem5 executing on Ayokunles-Laptop.local, pid 93424
+command line: /Users/ayokunleamodu/Documents/Projects/riscv-isa-extension-analysis-/gem5/build/RISCV/gem5.opt --outdir /Users/ayokunleamodu/Documents/Projects/riscv-isa-extension-analysis-/results/tournament/factorial /Users/ayokunleamodu/Documents/Projects/riscv-isa-extension-analysis-/src/run_branch_pred.py --binary /Users/ayokunleamodu/Documents/Projects/riscv-isa-extension-analysis-/benchmarks/factorial_riscv --predictor tournament
+
+============================================================
+SCRIPT STARTING!
+============================================================
+Parsing arguments...
+Configuration: /Users/ayokunleamodu/Documents/Projects/riscv-isa-extension-analysis-/benchmarks/factorial_riscv with tournament
+Predictor: tournament configured
+Loading binary: /Users/ayokunleamodu/Documents/Projects/riscv-isa-extension-analysis-/benchmarks/factorial_riscv
+Instantiating...
+Starting simulation...
+Computing factorials...
+Sum of factorials: 1226433209228
+Testing mutual recursion...
+Even numbers from 0-49: 25
+Computing branchy fibonacci...
+Sum of branchy fib: 1
+DONE! Exited @ tick 337593000

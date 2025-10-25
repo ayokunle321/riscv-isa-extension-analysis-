@@ -57,7 +57,7 @@ Lower is better - correlates with IPC results.
 
 ```bash
 # Clone the repo
-git clone <your-repo-url>
+git clone https://github.com/ayokunle321/gem5-branch-predictor-analysis.git
 cd riscv-isa-extension-analysis-
 
 # Build gem5 for RISC-V
@@ -113,12 +113,12 @@ python3 scripts/generate_graphs.py
 
 ```
 .
-├── benchmarks/          # RISC-V test programs
+├── benchmarks/               # RISC-V test programs
 │   ├── bfs.c
 │   ├── factorial.c
 │   └── hash_lookup.c
 ├── src/
-│   └── run_branch_pred.py    # Main simulation script
+│   └── run_branch_pred.py     # Main simulation script
 ├── scripts/
 │   ├── run_all_experiments.py # Automation
 │   ├── parse_results.py       # Stats parser
